@@ -1,0 +1,37 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+/* npx tailwindcss -i style.css -o ./dist/output.css --watch */
+
+@layer utilities {
+  /* homepage languages */
+  .btn {
+    @apply bg-[#54956f] shadow-gray-500 text-white font-semibold  py-2 px-6 w-auto rounded p-4 h-10 text-sm sm:text-base shadow-sm hover:bg-[#2e6796] transition-all duration-300 ease-in-out ring-1 ring-[#1b5d40] ring-opacity-50 tracking-wider;
+  }
+  /* product page languages used */
+  .btn-small {
+    @apply bg-[#54956f] hover:bg-[#2e6796] shadow-gray-500 text-white  py-0 px-4 font-semibold w-auto rounded h-8 text-sm sm:text-base shadow-sm transition-all duration-300 ease-in-out ring-1 ring-[#f0f5f5] ring-opacity-50 tracking-wider;
+  }
+  /* homepage showcase btn */
+  .showcase {
+    @apply bg-[#2e6796] text-white font-semibold py-2 px-4 w-32 rounded p-4 h-10 text-sm sm:text-base shadow-md hover:bg-[#6899cd] transition-all duration-200 ease-in-out ring-1 ring-[#6899cd] ring-opacity-30 lg:self-start flex items-center m-auto lg:m-0;
+  }
+  .showcase-thanks {
+    @apply bg-[#2e6796] text-white font-semibold py-2 px-4 w-32 rounded p-4 h-10 text-sm sm:text-base shadow-md hover:bg-[#6899cd] transition-all duration-200 ease-in-out ring-1 ring-[#6899cd] ring-opacity-30 m-auto lg:m-0;
+  }
+  /* Products page view live code */
+  .don {
+    @apply bg-[#2e6796] text-white font-bold tracking-wide text-lg py-3 px-4 w-5/6 sm:w-48 rounded p-4 h-auto sm:text-xl shadow-md hover:bg-[#6899cd] transition-all duration-200 ease-in-out ring-1 ring-[#6899cd] ring-opacity-30 mx-auto mb-8 sm:mb-0 lg:m-0;
+  }
+  /* Final products page live view */
+  .don-final {
+    @apply bg-[#2e6796] text-white text-center font-bold tracking-wide text-lg py-3 px-4 w-5/6 sm:w-48 rounded p-4 h-auto sm:text-xl shadow-md hover:bg-[#6899cd] transition-all duration-200 ease-in-out ring-1 ring-[#6899cd] ring-opacity-30 mx-auto my-8;
+  }
+  /* Product Page link to github */
+  .code-view {
+    @apply text-black text-opacity-70 font-semibold tracking-wide py-3 px-4 w-5/6 sm:w-48 rounded p-4 h-auto text-lg sm:text-base shadow-md hover:bg-[#6899cd] transition-all duration-200 ease-in-out ring-2 ring-[#6899cd]  text-center mx-auto lg:m-0;
+  }
+}
